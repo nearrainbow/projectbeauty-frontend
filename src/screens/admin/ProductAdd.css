@@ -1,0 +1,89 @@
+
+
+.body_container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 600px;
+    /* height: 800px; */
+    /* background-color: aqua; */
+    margin: auto;
+}
+
+.input_container {
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.add_button {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #323232;
+    border: 1px solid #171717;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.delete_button {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.add_button:hover {
+    background: #171717;
+    color: #f4f4f4;
+}
+
+.block-icon {
+    position: relative;
+    display: inline-flex;
+  }
+  
+  .icon-tag {
+    position: absolute;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 12px !important;
+    height: 12px !important;
+  }
+  
+  a {
+    display: inline-block;
+    position: relative;
+  }
+  a .image {
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+  a .icon {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

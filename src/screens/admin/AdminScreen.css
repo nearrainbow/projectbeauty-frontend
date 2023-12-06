@@ -1,0 +1,40 @@
+.img_div {
+  height: 100px;
+  width: 100px;
+}
+
+.description {
+  min-width: 200px;
+  white-space: pre-line;
+  /* max-width: 200px;
+  width: 100px; */
+}
+
+.category {
+  min-width: 130px;
+  /* max-width: 200px;
+  width: 100px; */
+}
+
+.price {
+  min-width: 100px;
+  /* max-width: 200px;
+  width: 100px; */
+}
+
+.action {
+  min-width: 100px;
+  /* max-width: 200px;
+  width: 100px; */
+}
+
+.price_underline {
+  text-decoration: line-through;
+  color: #FF0000
+}
+
+.tablerow {
+  max-width: 1300px;
+  margin: auto;
+  /* background-color: aqua; */
+}
