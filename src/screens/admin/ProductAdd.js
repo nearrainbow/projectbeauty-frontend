@@ -80,7 +80,7 @@ const ProductAdd = () => {
 
     const formData = new FormData();
     formData.append("files", e.target.files[0]);
-    fetch(config.baseURL + 'api/upload_image', {
+    fetch(config.baseURL + '/api/upload_image', {
       method: 'POST',
       body: formData, // Payload is formData object
     })
