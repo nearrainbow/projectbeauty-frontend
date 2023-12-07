@@ -17,6 +17,7 @@ import {getProducts as listProducts} from '../../redux/actions/productActions'
 
 import './ProductAdd.css'
 import {Api} from '../../utils/Api'
+import { config } from '../../utils/config';
 
 import {
   useParams
@@ -79,13 +80,13 @@ const ProductAdd = () => {
 
     const formData = new FormData();
     formData.append("files", e.target.files[0]);
-    fetch('http://127.0.0.1:3000/api/upload_image', {
+    fetch(config.baseURL + 'api/upload_image', {
       method: 'POST',
       body: formData, // Payload is formData object
     })
     .then(res => res.json())
     .then(data => { 
-      const ulr = "http://127.0.0.1:3000/"+ data.path;
+      const ulr = config.baseURL + data.path;
       setImageUrl(oldArray => [ulr,...oldArray])
     });
 
