@@ -80,12 +80,15 @@ const ProductAdd = () => {
 
     const formData = new FormData();
     formData.append("files", e.target.files[0]);
+
+    console.log("HERE: ", config.baseURL + '/api/upload_image')
     fetch(config.baseURL + '/api/upload_image', {
       method: 'POST',
       body: formData, // Payload is formData object
     })
     .then(res => res.json())
     .then(data => { 
+      console.log("HERE: ", data)
       const ulr = config.baseURL + data.path;
       setImageUrl(oldArray => [ulr,...oldArray])
     });
