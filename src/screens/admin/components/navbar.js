@@ -14,19 +14,12 @@ const Navbar = ({click}) => {
   useEffect(()=> {
     
     if(user.userInfo.details.role && user.userInfo.details.role !=2) {
-      window.location.replace("/")
+      // window.location.replace("/")
     }
     if(!isLogin()) {
       window.location.replace("/signin")
     }
   },[user])
-
-  const _handleLogout = () => {
-
-    dispatch(setInitialState())
-    logout()
-    history.push('/')
-  }
 
   return (
     <>
