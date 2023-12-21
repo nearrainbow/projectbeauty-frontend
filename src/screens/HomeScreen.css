@@ -45,12 +45,12 @@
 
 @media (max-width: 950px) {
   .homescreen__products {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
   }
 }
 
 @media (max-width: 630px) {
   .homescreen__products {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(1, auto);
   }
 }
