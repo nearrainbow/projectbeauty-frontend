@@ -1,4 +1,4 @@
-import './HomeScreen.css'
+import './Category.css'
 import {useEffect, useState} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 
@@ -57,7 +57,7 @@ const CategoryScreen = () => {
         <img src="/cover.jpg" className="img_cover" alt="Logo"></img>
         <h2 className="homescreen__title">{category}</h2>
         <div className='homescreen__title_after'> </div>
-        <div className="homescreen__products">
+        <div className="category__products">
           {loading ? (
             <h2>Loading...</h2>
           ) 
